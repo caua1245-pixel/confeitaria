@@ -1,0 +1,116 @@
+/* Estilo global para ambos os arquivos HTML */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFBF0;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Títulos principais */
+h1, h2 {
+    color: #8B4513;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 90%;
+    margin: 0 auto 30px auto;
+    color: #8B4513;
+}
+
+/* Imagem centralizada */
+img {
+    width: 80%; /* Ajuste automático da largura */
+    max-width: 600px; /* Limite máximo da largura */
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    display: block;
+}
+
+
+/* Botão com link */
+button, a.button-link {
+    font-size: 26px; /* Aumenta o tamanho da fonte */
+    padding: 18px 40px; /* Aumenta o espaço interno (altura e largura) do botão */
+    background-color: #FF69B4;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 90%; /* Aumenta a largura do botão para 90% da tela */
+    max-width: 600px; /* Define uma largura máxima para o botão */
+}
+
+button:hover, a.button-link:hover {
+    background-color: #FF1493;
+}
+
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px; /* Ajuste do tamanho do título */
+    }
+
+    h2 {
+        font-size: 18px; /* Ajuste do tamanho do subtítulo */
+    }
+
+    img {
+        width: 100%; /* Aumenta a largura da imagem para ocupar toda a tela */
+    }
+
+    button, a.button-link {
+        width: 90%; /* Ajusta a largura do botão para telas pequenas */
+    }
+}
+
+/* Estilos do iframe (vídeo) */
+iframe {
+    width: 100%;
+    height: 315px;
+    max-width: 640px; /* Limite para o vídeo */
+    margin: 20px auto;
+    border: none;
+}
+
+/* Estilos adicionais para o link */
+a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: #FF69B4;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+a:hover {
+    background-color: #FF1493;
+}
